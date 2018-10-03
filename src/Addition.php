@@ -3,7 +3,7 @@ namespace EasyMath;
 
 class Addition
 {
-    public function add($x, $y)
+    static public function add($x, $y)
     {
         return $x + $y;
     }
