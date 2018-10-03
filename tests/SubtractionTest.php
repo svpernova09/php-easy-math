@@ -22,6 +22,20 @@ final class SubtractionTest extends TestCase
         );
     }
 
+
+    public function testEasyMathKnowsHowToSub()
+    {
+        $this->assertEquals(
+            -473,
+            Subtraction::sub(1, 5, 6, 9, 452) // = -473
+        );
+
+        $this->assertEquals(
+            -21,
+            Subtraction::sub(15, 4, 2) // = -21
+        );
+    }
+
     public function mathProvider()
     {
         return [
