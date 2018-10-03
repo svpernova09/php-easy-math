@@ -18,7 +18,7 @@ final class SubtractionTest extends TestCase
 
         $this->assertEquals(
             $expected,
-            $math->subtract($x, $y)
+            Subtraction::subtract($x, $y)
         );
     }
 

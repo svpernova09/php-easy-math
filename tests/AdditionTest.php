@@ -14,11 +14,9 @@ final class AdditionTest extends TestCase
      */
     public function testEasyMathKnowsHowToAdd($x, $y, $expected)
     {
-        $math = new Addition();
-
         $this->assertEquals(
             $expected,
-            $math->add($x, $y)
+            Addition::add($x, $y)
         );
     }
 
