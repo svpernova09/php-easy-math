@@ -22,16 +22,19 @@ final class AdditionTest extends TestCase
         );
     }
 
-    public function testEasyMathKnowsHowToSum()
+    /**
+     * @param $x
+     * @param $y
+     * @param $expected
+     * @dataProvider mathProvider
+     */
+    public function testEasyMathKnowsHowToSum($x, $y, $expected)
     {
-        $this->assertEquals(
-            36,
-            Addition::sum(1, 5, 6, 9, 15) // = 36
-        );
+        $math = new Addition();
 
         $this->assertEquals(
-            -1,
-            Addition::sum(-12, 5, 6) // = -1
+            $expected,
+            $math->sum($x, $y)
         );
     }
 
