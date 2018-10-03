@@ -7,14 +7,16 @@ class Subtraction
     {
         return $x - $y;
     }
+
     /**
      * Sub many numbers
-     * @param float ...$numbers
+     * @param float $firstNumber
+     * @param float|null ...$numbers
      * @return float
      */
-    static public function sub(float ...$numbers): float
+    public function sub(float $firstNumber, ?float ...$numbers): float
     {
-        $sub = 0;
+        $sub = $firstNumber;
 
         foreach ($numbers as $number) {
             $sub -= $number;

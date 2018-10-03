@@ -12,7 +12,7 @@ class Addition
      * @param float ...$numbers
      * @return float
      */
-    static public function sum(float ...$numbers): float
+    public function sum(float ...$numbers): float
     {
         $sum = 0;
 
