@@ -22,6 +22,22 @@ final class SubtractionTest extends TestCase
         );
     }
 
+    /**
+     * @param $x
+     * @param $y
+     * @param $expected
+     * @dataProvider mathProvider
+     */
+    public function testEasyMathKnowsHowToSub($x, $y, $expected)
+    {
+        $math = new Subtraction();
+        
+        $this->assertEquals(
+            $expected,
+            $math->sub($x, $y)
+        );
+    }
+
     public function mathProvider()
     {
         return [
