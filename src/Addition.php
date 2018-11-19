@@ -1,12 +1,26 @@
 <?php
+/**
+ * \EasyMath\Addition Class
+ */
+
 namespace EasyMath;
 
+/**
+ * Class containing addition methods
+ */
 class Addition
 {
+    /**
+     * Sum 2 numbers
+     * @param float $x
+     * @param float $y
+     * @return float
+     */
     public function add($x, $y)
     {
         return $x + $y;
     }
+
     /**
      * Sum many numbers
      * @param float ...$numbers
