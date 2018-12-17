@@ -4,12 +4,12 @@ namespace EasyMath\Tests;
 use EasyMath\Addition;
 use PHPUnit\Framework\TestCase;
 
-final class AdditionTest extends TestCase
+class AdditionTest extends TestCase
 {
     /**
-     * @param $x
-     * @param $y
-     * @param $expected
+     * @param float $x
+     * @param float $y
+     * @param float $expected
      * @dataProvider mathProvider
      */
     public function testEasyMathKnowsHowToAdd($x, $y, $expected)
@@ -23,9 +23,9 @@ final class AdditionTest extends TestCase
     }
 
     /**
-     * @param $x
-     * @param $y
-     * @param $expected
+     * @param float $x
+     * @param float $y
+     * @param float $expected
      * @dataProvider mathProvider
      */
     public function testEasyMathKnowsHowToSum($x, $y, $expected)
