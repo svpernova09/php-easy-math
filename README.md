@@ -1,6 +1,6 @@
 # PHP Easy Math
 
-[![Build Status](https://travis-ci.org/svpernova09/php-easy-math.svg?branch=master)](https://travis-ci.org/svpernova09/php-easy-math)
+![](https://github.com/svpernova09/php-easy-math/workflows/.github/workflows/php.yml/badge.svg)
 
 ## A simple library to do math for you
  
