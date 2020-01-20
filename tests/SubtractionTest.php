@@ -4,12 +4,12 @@ namespace EasyMath\Tests;
 use EasyMath\Subtraction;
 use PHPUnit\Framework\TestCase;
 
-final class SubtractionTest extends TestCase
+class SubtractionTest extends TestCase
 {
     /**
-     * @param $x
-     * @param $y
-     * @param $expected
+     * @param float $x
+     * @param float $y
+     * @param float $expected
      * @dataProvider mathProvider
      */
     public function testEasyMathKnowsHowToSubtract($x, $y, $expected)
@@ -23,9 +23,9 @@ final class SubtractionTest extends TestCase
     }
 
     /**
-     * @param $x
-     * @param $y
-     * @param $expected
+     * @param float $x
+     * @param float $y
+     * @param float $expected
      * @dataProvider mathProvider
      */
     public function testEasyMathKnowsHowToSub($x, $y, $expected)
