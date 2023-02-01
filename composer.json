@@ -3,7 +3,7 @@
     "description": "A simple library to do math for you",
     "require": {
         "php": "^8.0",
-        "dompdf/dompdf": "^0.8.2"
+        "dompdf/dompdf": "^2.0.2"
     },
     "require-dev": {
         "phpunit/phpunit": "^9",
