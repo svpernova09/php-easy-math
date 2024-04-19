@@ -38,7 +38,7 @@ class SubtractionTest extends TestCase
         );
     }
 
-    public function mathProvider()
+    public static function mathProvider()
     {
         return [
             [0, 0, 0],
