@@ -9,7 +9,7 @@ jobs:
         php: ['8.0']
     name: PHP ${{ matrix.php }}
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v4
       - name: Install PHP
         uses: shivammathur/setup-php@master
         with:
